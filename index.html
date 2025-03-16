@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,11 +7,9 @@
     <title>My Personal Profile</title>
     <style>
         body {
-            font-family: Arial, sans margin: 0;
+            font-family: Arial, sans-serif;
+            margin: 0;
             padding: 0;
-        }
-        center img {
-            margin-top: 20px;
         }
         header, footer {
             background-color: #f4f4f4;
@@ -20,21 +19,36 @@
         h2 {
             color: #333;
         }
-        form {
-            margin: 20px;
+        main {
+            padding: 20px;
         }
-        form label, input {
+        form {
+            margin: 20px 0;
+        }
+        form label {
             display: block;
-            margin: 10px 0;
+            margin: 10px 0 5px;
+        }
+        form input {
+            display: block;
+            width: 100%;
+            max-width: 400px;
+            margin-bottom: 15px;
+            padding: 8px;
+            font-size: 1rem;
+        }
+        form input[type="submit"] {
+            cursor: pointer;
+            background-color: #333;
+            color: #fff;
+            border: none;
         }
     </style>
 </head>
 <body>
-    
-
     <header>
-        <center><h1>Welcome to My Profile</h1></center>
-    </header>    
+        <h1>Welcome to My Profile</h1>
+    </header>
 
     <main>
         <section>
@@ -59,21 +73,23 @@
             <h2>Contact Information</h2>
             <p>Email: azhaga@example.com</p>
         </section>
-    </main>
 
-    <h2>Contact me</h2>
-    <form>
-        <label for="fname">Name:</label>
-        <input type="text" id="fname" placeholder="Your Name">
-        
-        <label for="lname">E-mail:</label>
-        <input type="email" id="lname" placeholder="Youremail@gmail.com">
-        
-        <label for="ni">Mobile Number:</label>
-        <input type="number">
-        
-        <input type="submit">
-    </form>
+        <section>
+            <h2>Contact Me</h2>
+            <form>
+                <label for="fname">Name:</label>
+                <input type="text" id="fname" placeholder="Your Name">
+                
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" placeholder="youremail@example.com">
+                
+                <label for="mobile">Mobile Number:</label>
+                <input type="number" id="mobile" placeholder="Your Mobile Number">
+                
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
 
     <footer>
         <p>&copy; 2025 Azhaga's Profile</p>
